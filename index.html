@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Timetable Generator</h1>
+
+    <div class="input-section">
+        <h2>Inputs</h2>
+
+        <label for="courses">Courses (comma-separated):</label>
+        <input type="text" id="courses" name="courses" placeholder="e.g., Math, Physics, Chemistry">
+
+        <label for="teachers">Teachers (comma-separated):</label>
+        <input type="text" id="teachers" name="teachers" placeholder="e.g., Dr. Smith, Prof. Jones">
+
+        <label for="rooms">Rooms (comma-separated, name:capacity):</label>
+        <input type="text" id="rooms" name="rooms" placeholder="e.g., RoomA:30, RoomB:50, Lab1:20">
+        
+        <label for="classLectures">Lectures per course (comma-separated, course=lectures):</label>
+        <input type="text" id="classLectures" name="classLectures" placeholder="e.g., Math=3, Physics=2, Chemistry=3">
+
+        <label for="timeSlots">Time Slots (comma-separated):</label>
+        <input type="text" id="timeSlots" name="timeSlots" placeholder="e.g., Mon 9-10, Mon 10-11, Tue 9-10">
+
+        <label for="populationSize">Population Size (for GA):</label>
+        <input type="number" id="populationSize" name="populationSize" value="100">
+
+        <label for="generations">Number of Generations (for GA):</label>
+        <input type="number" id="generations" name="generations" value="500">
+    </div>
+
+    <button id="generateButton">Generate Timetable</button>
+
+    <h2>Generated Timetable</h2>
+    <div id="timetable-display">
+        <!-- Timetable will be displayed here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
